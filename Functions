@@ -1,0 +1,105 @@
+//Q1
+// function reverseNumber(number)
+// {
+//     var reverseNumber=0;
+//     var remainder;
+//     while(number > 0)
+//     {
+//         remainder = number % 10;
+//         reverseNumber = reverseNumber * 10 + remainder;
+//         number = number / 10;
+//     }
+//     return reverseNumber;
+// }
+
+// var number = +prompt("Enter a number = ");
+// var result = reverseNumber(number);
+// alert("Reverse number = " + result);
+
+
+// Q2   
+// function checkPalindrome(string) 
+// {
+
+//     var len = string.length;
+//     for (var i = 0; i < len / 2; i++) 
+//     {
+//         if (string[i] !== string[len - 1 - i]) 
+//         {
+//             return "It is not a palindrome";
+//         }
+//     }
+//     return "It is a palindrome";
+// }
+
+// var word = prompt("Enter a string: ");
+// var value = checkPalindrome(word);
+// alert(value);
+
+
+//Q3
+// function allPossibleCombination(string)
+// {
+//     var combinations = [];
+//       for(var i = 0 ;i<string.length; i++)
+//     {
+//         for(var j = i + 1; j<string.length+1; j++)
+//         {
+//             combinations.push(string.slice(i, j));
+//         }
+//     }
+//     return combinations;
+// }
+
+// var word = prompt("Enter a word: ");
+// alert("All possible combination = " + allPossibleCombination(word));
+
+
+//Q4
+// function alphabet_order(string)
+// {
+//     return string.split('').sort().join('');
+// }
+
+// alert("Alphabetic order: " + alphabet_order("shaheer"));
+
+
+//Q5
+// function capitalized()
+// {
+//     var mySentence = "My name is shaheer shah";
+//     var words = mySentence.split(" ");
+
+//     for (let i = 0; i < words.length; i++) 
+//     {
+//         words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+//     }
+//     alert(words.join(' '));
+// }
+// capitalized();
+
+
+//Q6
+// function findLongestWord(str) 
+// {
+//     var longestWord = str.split(' ').sort(function(a, b) { return b.length - a.length; });
+//     alert(longestWord[0]);
+//   }
+//   findLongestWord("The quick brown fox jumped over the lazy dog");
+
+//Q7
+// function countVowels()
+// {
+//     var string = "hello world";
+//     var vowels=0;
+//     for(var i=0; i<string.length; i++)
+//     {
+//         if(string[i] === 'a' || string[i] === 'e' || string[i] === 'i' || string[i] === 'o' || string[i] === 'u')
+//         {
+//             vowels++;
+//         }
+//     }
+//     alert("Total vowels = " + vowels);
+// }
+// countVowels();
+
